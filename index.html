@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>Title</title>
+</head>
+<body>
+    <form id="form">
+        <input type="text" id="name" name="name">
+        <input type="text" id="password" name="password">
+        <button id="submit" type="submit">submit</button>
+        <p id="error" style="color:red;"></p>
+    </form>
+<script>
+    document.getElementById("form").addEventListener("submit", (event) => {
+        event.preventDefault();
+        let error = document.getElementById("error");
+        let name = document.getElementById("name").value.trim();
+        let password = document.getElementById("password").value.trim();
+
+        if (name == "" || password == "") {
+            error.textContent = "Name and password cannot be empty.";
+        } else {
+            error.textContent = "";
+        }
+    });
+</script>
+</body>
+</html>

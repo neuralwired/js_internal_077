@@ -36,12 +36,17 @@
 // console.log(typeof(d))
 
 
-let score = "33abcd"
+// let score = "33abcd"
 
-console.log(typeof(score))
-console.log(typeof score)
+// console.log(typeof(score))
+// console.log(typeof score)
 
-let scoreNum = Number(score)
+// let scoreNum = Number(score)
 
-console.log(scoreNum, typeof(scoreNum))
-console.log(typeof scoreNum)
+// console.log(scoreNum, typeof(scoreNum))
+// console.log(typeof scoreNum)
+
+let myDate = new Date();
+console.log(myDate)
+console.log(myDate.toString())
+console.log(myDate.getDate(),"/",myDate.getMonth(),"/",myDate.getFullYear())

@@ -1,6 +1,6 @@
 # **Assignment 3: JavaScript (Day-3)**
 
-## **Part-A: Arrays, Higher-Order Methods, Objects, JSON**
+**Part-A: Arrays, Higher-Order Methods, Objects, JSON**
 
 ---
 
@@ -87,7 +87,9 @@ let upperNames = names.map(n => n.toUpperCase());
 
 ---
 
-# **Part-B: Webkata Tasks (4 to 7)**
+**Part-B: Webkata Tasks (4 to 7)**
+
+---
 
 ### **4. Change text of element with id `hello`**
 
