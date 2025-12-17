@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Successful</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="success-container">
+        <h2 style="color: green; border-color: green;">Registration Receipt</h2>
+        
+        <p><strong>Name:</strong> <span id="display-name"></span></p>
+        <p><strong>Email:</strong> <span id="display-email"></span></p>
+        <p><strong>Gender:</strong> <span id="display-gender"></span></p>
+        <p><strong>Course:</strong> <span id="display-course"></span></p>
+    </div>
+
+    <a href="index.html" class="btn">New Registration</a>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+
+        document.getElementById('display-name').textContent = params.get('name');
+        document.getElementById('display-email').textContent = params.get('email');
+        document.getElementById('display-gender').textContent = params.get('gender');
+        document.getElementById('display-course').textContent = params.get('course');
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+:root { --border: 2px solid black; }
+
+body {
+    font-family: 'Space Mono', monospace;
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 1rem;
+    color: black;
+    background: white;
+}
+
+h2 { 
+    text-transform: uppercase; 
+    border-bottom: var(--border); 
+    padding-bottom: 0.5rem; 
+}
+
+.form-group { 
+    margin-bottom: 1rem; 
+    display: flex; 
+    flex-direction: column; 
+    gap: 0.5rem; 
+}
+
+label { font-weight: bold; }
+
+input[type="text"], input[type="email"], select {
+    padding: 0.5rem;
+    border: var(--border);
+    border-radius: 0; 
+    font-family: inherit;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.inline-group { display: flex; align-items: center; gap: 1rem; }
+.checkbox-group { display: flex; align-items: center; gap: 0.5rem; margin-top: 0.5rem; }
+
+button, .btn {
+    display: block;
+    background: black;
+    color: white;
+    border: var(--border);
+    padding: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 1rem;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 13.333px; 
+}
+
+button:hover, .btn:hover { background: white; color: black; }
+button:disabled { background: #ccc; cursor: not-allowed; border-color: #ccc; }
+
+#output { margin-top: 2rem; }
+
+.success-container {
+    border: 2px solid green;
+    padding: 1rem;
+    color: green;
+}
+
+.success-container h3 {
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+.success-container p {
+    color: black;
+    margin: 0.5rem 0;
+}
+
+.timer-msg {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: black;
+    border-top: 1px dashed black;
+    padding-top: 0.5rem;
+}
+
+.error-msg {
+    color: red;
+    border: 2px solid red;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
