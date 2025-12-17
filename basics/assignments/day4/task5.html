@@ -1,0 +1,18 @@
+<!-- Task 5: Counter App -->
+<button onclick="decrease()">-</button>
+<span id="count">0</span>
+<button onclick="increase()">+</button>
+
+<script>
+let count = 0;
+
+function increase() {
+    count++;
+    document.getElementById("count").textContent = count;
+}
+
+function decrease() {
+    if (count > 0) count--;
+    document.getElementById("count").textContent = count;
+}
+</script>

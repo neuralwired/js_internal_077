@@ -1,0 +1,12 @@
+<!-- Task 8: Todo List -->
+<input type="text" id="task">
+<button onclick="addTask()">Add Task</button>
+<ul id="list"></ul>
+
+<script>
+function addTask() {
+    let li = document.createElement("li");
+    li.textContent = document.getElementById("task").value;
+    document.getElementById("list").appendChild(li);
+}
+</script>

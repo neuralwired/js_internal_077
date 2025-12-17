@@ -1,0 +1,16 @@
+<!-- Task 12: Random Quote Generator -->
+<button onclick="newQuote()">New Quote</button>
+<p id="quote"></p>
+
+<script>
+let quotes = [
+    "Code is poetry",
+    "Practice makes perfect",
+    "JavaScript is powerful"
+];
+
+function newQuote() {
+    let i = Math.floor(Math.random() * quotes.length);
+    document.getElementById("quote").textContent = quotes[i];
+}
+</script>

@@ -1,0 +1,12 @@
+<!-- Task 10: Theme Switcher -->
+<button onclick="toggleTheme()">Toggle Theme</button>
+
+<script>
+let dark = false;
+
+function toggleTheme() {
+    document.body.style.backgroundColor = dark ? "white" : "black";
+    document.body.style.color = dark ? "black" : "white";
+    dark = !dark;
+}
+</script>

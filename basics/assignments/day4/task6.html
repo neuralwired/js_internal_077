@@ -1,0 +1,14 @@
+<!-- Task 6: Create Element Dynamically -->
+<button onclick="addBox()">Add Box</button>
+
+<script>
+function addBox() {
+    let div = document.createElement("div");
+    div.textContent = "Box";
+    div.style.border = "1px solid black";
+    div.style.padding = "10px";
+    div.style.margin = "10px";
+    div.style.background = "#eee";
+    document.body.appendChild(div);
+}
+</script>

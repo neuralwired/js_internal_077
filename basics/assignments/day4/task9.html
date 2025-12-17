@@ -1,0 +1,15 @@
+<!-- Task 9: Attribute Change (Image Size) -->
+<img id="pic" src="img.jpg" width="200">
+<br>
+<button onclick="small()">Small</button>
+<button onclick="large()">Large</button>
+
+<script>
+function small() {
+    document.getElementById("pic").setAttribute("width", "100");
+}
+
+function large() {
+    document.getElementById("pic").setAttribute("width", "300");
+}
+</script>
