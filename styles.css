@@ -86,9 +86,12 @@ button:disabled { background: #ccc; cursor: not-allowed; border-color: #ccc; }
     padding-top: 0.5rem;
 }
 
-.error-msg {
+.field-error {
     color: red;
-    border: 2px solid red;
-    padding: 1rem;
-    margin-bottom: 1rem;
+    font-size: 0.8rem;
+    display: none;
+}
+
+.input-error {
+    border-color: red !important;
 }
